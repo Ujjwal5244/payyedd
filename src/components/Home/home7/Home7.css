@@ -1,0 +1,114 @@
+.app {
+  min-height: 100vh;
+}
+
+.hero-section {
+  position: relative;
+  height: 50vh;
+  background: linear-gradient(rgba(59, 198, 63, 0.8), rgba(76, 175, 80, 0.8)),
+    url("../../../assets/officeimage.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: white;
+  color: #4caf50;
+  border: none;
+  width: 180px;
+  height: 7vh;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+/* _________________section-2 css___________  */
+
+.app-section {
+  min-height: 30vh;
+  background-color: rgba(220, 215, 215, 0.467);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 20px;
+}
+
+.app-content {
+  max-width: 800px;
+}
+
+.app-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.app-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.store-button img {
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.store-button:hover img {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .app-content h2 {
+    font-size: 2rem;
+  }
+
+  .app-content p {
+    font-size: 1rem;
+  }
+}

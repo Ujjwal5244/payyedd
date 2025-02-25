@@ -1,0 +1,225 @@
+/* src/components/PayyedSection.css */
+.payyed-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  height: 55vh;
+}
+
+.payyed-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 100px;
+}
+
+.payyed-container p {
+  font-size: 18px;
+  color: #0e0d0d;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 2rem;
+  margin-top: 140px;
+  margin-left: 60px;
+}
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.feature svg {
+  font-size: 40px;
+  color: #197c38;
+}
+
+.home4-svg {
+  margin-top: 40px;
+}
+
+#card-payyedd {
+  display: flex;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  border-bottom: 8px;
+  margin-top: 47px;
+  background-color: rgba(128, 128, 128, 0.111);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.see-more {
+  display: flex;
+  color: #23e650;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+  color: #0f9b3c;
+}
+
+/* src/components/Home4.css */
+.payyed-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  height: auto;
+}
+
+/* Title and Paragraph */
+.payyed-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.payyed-container p {
+  font-size: 18px;
+  color: #0e0d0d;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 2x2 layout */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: -80px;
+  margin-left: 130px;
+}
+
+/* Feature Box */
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+/* Icons */
+.feature svg {
+  font-size: 40px;
+  color: #197c38;
+}
+
+/* Icon Wrapper */
+.home4-svg {
+  margin-bottom: 10px;
+}
+
+/* Card Title */
+
+/* See More Button */
+.see-more {
+  display: inline-block;
+  color: #23e650;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+  color: #0f9b3c;
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 2fr); /* 1 column for small screens */
+    gap: 10px;
+  }
+
+  .feature {
+    width: 200px;
+    height: 150px;
+  }
+
+  .feature svg {
+    font-size: 30px;
+  }
+
+  #card-payyedd {
+    display: flex;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 200px; /* Adjusted width */
+    height: 50px; /* Unified height */
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: 27px;
+    background-color: rgba(128, 128, 128, 0.111);
+  }
+
+  .see-more {
+    display: flex;
+    margin-bottom: 110px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Extra Small Screens (Very Small Phones) */
+@media (max-width: 480px) {
+  .payyed-container {
+    padding: 30px 10px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .feature {
+    max-width: 180px;
+    height: 140px;
+  }
+
+  .feature svg {
+    font-size: 28px;
+  }
+
+  #card-payyedd {
+    display: flex;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 180px; /* Adjusted width */
+    height: 50px; /* Unified height */
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.111);
+  }
+
+  .see-more {
+    font-size: 12px;
+  }
+}

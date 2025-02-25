@@ -1,0 +1,256 @@
+/* Container styles */
+.home3-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+  height: 70vh;
+  background-color: #dbd5d563;
+}
+
+/* Left text section */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 40px;
+  width: 40%;
+  max-width: 600px;
+}
+
+.text-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.text-section p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  text-decoration: none;
+  color: #16ae18e7;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Right grid section */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  width: 50%;
+}
+
+/* Service card */
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay effect */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Default styles are already defined in your existing CSS */
+
+/* For large desktops and big screens */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .video-container {
+    width: 800px;
+  }
+  .video-thumbnail-img {
+    width: 700px;
+    height: 450px;
+  }
+  .text-container {
+    width: 600px;
+  }
+  .grid-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* For laptops and smaller desktops */
+@media (max-width: 1024px) {
+  .container, .home3-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container, .text-section {
+    width: 80%;
+    text-align: center;
+  }
+
+  .home3-container {
+    height: auto; /* Remove fixed height to allow flexible content */
+    padding: 50px 0; /* Add some space */
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+  }
+
+  .service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 10px; /* Space between grid items */
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-section p {
+  text-align: left;  /* Ensures text starts from the left */
+  margin: 0; /* Removes extra margin if any */
+  padding: 0; /* Removes extra padding if any */
+  line-height: 1.6; /* Improves readability */
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.image-home3-container {
+    width: 100%;
+    height: 150px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-home3-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left
+}
+
+}
+/* For mobile devices */
+@media (max-width: 480px) {
+  .text-container h2, .text-section h1 {
+    font-size: 22px;
+  }
+  .text-container p, .text-section p {
+    font-size: 14px;
+  }
+  .text-container ul li {
+    font-size: 14px;
+  }
+  .video-thumbnail-img {
+    width: 100%;
+  }
+  #cta-button, .learn-more {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 360px) {
+  .text-container h2, .text-section h1 {
+    font-size: 20px;
+  }
+  .text-container p, .text-section p {
+    font-size: 13px;
+  }
+  .text-container ul li {
+    font-size: 12px;
+  }
+  #cta-button, .learn-more {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

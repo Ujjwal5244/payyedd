@@ -1,0 +1,85 @@
+.hero-about1 {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-content-about1 {
+  max-width: 800px;
+}
+
+.hero-about1 h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.hero-about1 p {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.button-group-about1 {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #45a049;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 640px) {
+  .hero-about1 h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-about1 p {
+    font-size: 1.25rem;
+  }
+  
+  .button-group-about1 {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

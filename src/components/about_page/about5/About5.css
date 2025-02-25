@@ -1,0 +1,77 @@
+.investors-container {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    height: 75vh;
+  }
+
+.investors-container h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-bottom: 0px;
+
+}
+
+.investors-container p{
+    font-size:20px;
+    margin-top: 5px;
+}
+
+  .investors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Reduce gap between items */
+    row-gap: 5px; /* Reduce space between rows */
+    margin-top: 10px; /* Reduce space from heading */
+    margin-top: 35px;
+  }
+  
+  .investor-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 120px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 5px; /* Reduce padding */
+  }
+  
+  .investor-item:hover {
+    transform: scale(0.9);
+  }
+  
+  .investor-logo {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  /* Responsive Design */
+@media (max-width: 1024px) {
+    .investor-item {
+        width: 150px; /* Smaller on tablets */
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .investor-item {
+        width: 120px; /* Even smaller on mobile */
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .investor-item {
+        width: 100px;
+        height: 70px;
+    }
+    .investors-grid {
+        gap: 8px; /* Reduce spacing for small screens */
+    }
+}
