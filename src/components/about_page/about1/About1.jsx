@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../../assets/aboutimage1.jpg"; // ✅ Import image
+import aboutImage from "/assets/aboutimage1.jpg"; // ✅ Import image
 import "./About1.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";

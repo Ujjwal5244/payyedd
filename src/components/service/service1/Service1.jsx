@@ -1,12 +1,12 @@
 import React from "react";
-import videoKYC from "../../../assets/service1img1.webp";
-import VirtualKYC from "../../../assets/service1img2.png";
-import AadhaarVerification from "../../../assets/service1img7.jpeg";
-import DLValidation from "../../../assets/service1img6.webp";
-import FaceRecognition from "../../../assets/service1img3.png";
-import IndividualVerification from "../../../assets/service1img4.jpg";
-import PANVerification from "../../../assets/service1img5.webp";
-import   from "../../ui/infinite-moving-cards";
+import videoKYC from "/assets/service1img1.webp";
+import VirtualKYC from "/assets/service1img2.png";
+import AadhaarVerification from "/assets/service1img7.jpeg";
+import DLValidation from "/assets/service1img6.webp";
+import FaceRecognition from "/assets/service1img3.png";
+import IndividualVerification from "/assets/service1img4.jpg";
+import PANVerification from "/assets/service1img5.webp";
+
 
 
 const services = [
@@ -27,8 +27,7 @@ const Service1 = () => {
         <h3>We Deliver the Best Solutions</h3>
       </div>
       
-      {/* Infinite Moving Cards Component */}
-      <InfiniteMovingCards- items={services} speed="fast" direction="left" />
+   
     </div>
   );
 };

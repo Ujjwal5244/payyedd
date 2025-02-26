@@ -1,7 +1,7 @@
 import React from "react";
 import './About3.css'
-import about3img1 from "../../../assets/about3img1.jpeg"; // ✅ Import image
-import about3img2 from "../../../assets/about3img2.webp"; // ✅ Import image
+import about3img1 from "/assets/about3img1.jpeg"; // ✅ Import image
+import about3img2 from "/assets/about3img2.webp"; // ✅ Import image
 
 const About3 = () => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home3.css";
-import freelancerImg from "../../../assets/freelancer.webp";
-import onlineShoppingImg from "../../../assets/onlineshoping.webp";
-import onlineSellersImg from "../../../assets/onlineseller.webp";
-import affiliateMarketingImg from "../../../assets/affiliatemarketing.webp";
+import freelancerImg from "/assets/freelancer.webp";
+import onlineShoppingImg from "/assets/onlineshoping.webp";
+import onlineSellersImg from "/assets/onlineseller.webp";
+import affiliateMarketingImg from "/assets/affiliatemarketing.webp";
 
 const services = [
   { image: freelancerImg, title: "Freelancer" },

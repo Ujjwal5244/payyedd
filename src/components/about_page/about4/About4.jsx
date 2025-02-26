@@ -1,8 +1,8 @@
 import "./About4.css";
-import about4img1 from "../../../assets/about4img1.jpg";
-import about4img2 from "../../../assets/about4img2.jpg";
-import about4img3 from "../../../assets/about4img3.jpg";
-import about4img4 from "../../../assets/about4img4.jpg";
+import about4img1 from "/assets/about4img1.jpg";
+import about4img2 from "/assets/about4img2.jpg";
+import about4img3 from "/assets/about4img3.jpg";
+import about4img4 from "/assets/about4img4.jpg";
 import { FaFacebookF, FaTwitter, FaGoogle } from "react-icons/fa";
 
 function About4() {

@@ -1,8 +1,8 @@
 // App.jsx
 import './Service2.css'
-import architectImg from '../../../assets/service2img1.svg'
-import DevelopmentImg from '../../../assets/service2img2.svg'
-import TestingImg from '../../../assets/service2img3.svg'
+import architectImg from '/assets/service2img1.svg'
+import DevelopmentImg from '/assets/service2img2.svg'
+import TestingImg from '/assets/service2img3.svg'
 
 
 
