@@ -3,8 +3,8 @@ import "./Home1.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
-import image1 from "../../../assets/home1-img1.jpg";
-import image2 from "../../../assets/home1-img2.jpg";
+import image1 from "/assets/home1-img1.jpg";
+import image2 from "/assets/home1-img2.jpg";
 
 const slides = [
   {

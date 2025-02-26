@@ -2,7 +2,7 @@
     position: relative;
     height: 50vh;
     background: linear-gradient(rgba(59, 198, 63, 0.8), rgba(76, 175, 80, 0.8)),
-      url("../../../assets/officeimage.webp");
+      url("/assets/officeimage.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

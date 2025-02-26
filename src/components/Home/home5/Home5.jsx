@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 // import { FaPlay } from "react-icons/fa6";
 import MyModal from "../../modal/modal";
 import { useState } from "react";
-import thumbnail from "../../../assets/buussinessimg.webp"; // Replace with actual image path
+import thumbnail from "/assets/buussinessimg.webp"; // Replace with actual image path
 
 const HowItWorks = () => {
   const [isOpen, setIsOpen] = useState(false);

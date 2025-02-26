@@ -2,18 +2,18 @@ import React from "react";
 import "./About5.css";
 
 // Import logos from assets
-import themeforestLogo from "../../../assets/themeforestabout5img1.png";
-import envatoLogo from "../../../assets/envatoabout5img2.png";
-import dribbbleLogo from "../../../assets/dribbbleabout5img3.png";
-import codecanyonLogo from "../../../assets/codecanyonabout5img4.png";
-import graphicriverLogo from "../../../assets/graphicriverabout5img5.png";
-import audiojungleLogo from "../../../assets/audiojungleabout5img6.png";
-import activedenLogo from "../../../assets/activedenabout5img7.png";
-import threedOceanLogo from "../../../assets/3doccanabout5img8.png"; // ✅ Fixed path
-import photoduneLogo from "../../../assets/photoduneabout5img9.png";
-import videohiveLogo from "../../../assets/videohiveabout5img10.jpeg";
-import behanceLogo from "../../../assets/Behanceabout5img11.png";
-import frosterr from "../../../assets/frosterrsabout5img12.png";
+import themeforestLogo from "/assets/themeforestabout5img1.png";
+import envatoLogo from "/assets/envatoabout5img2.png";
+import dribbbleLogo from "/assets/dribbbleabout5img3.png";
+import codecanyonLogo from "/assets/codecanyonabout5img4.png";
+import graphicriverLogo from "/assets/graphicriverabout5img5.png";
+import audiojungleLogo from "/assets/audiojungleabout5img6.png";
+import activedenLogo from "/assets/activedenabout5img7.png";
+import threedOceanLogo from "/assets/3doccanabout5img8.png"; // ✅ Fixed path
+import photoduneLogo from "/assets/photoduneabout5img9.png";
+import videohiveLogo from "/assets/videohiveabout5img10.jpeg";
+import behanceLogo from "/assets/Behanceabout5img11.png";
+import frosterr from "/assets/frosterrsabout5img12.png";
 
 
 const About5 = () => {

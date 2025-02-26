@@ -7,8 +7,8 @@ import { FaLock } from "react-icons/fa";
 
 const Home2 = () => {
   return (
-    <div className="home2-container bg-red-500">
-      <div className="heading bg-red-500">
+    <div className="home2-container ">
+      <div className="heading">
         <h1>Why should you choose Payyed?</h1>
         <p>
           Here’s Top 4 reasons why using a Payyed account for managing your

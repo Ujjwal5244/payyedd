@@ -1,7 +1,7 @@
 // App.jsx
 import { useState } from "react";
 import "./Login.css";
-import backgroundImage from "../../../assets/home1-img1.jpg"; // Adjust path as needed
+import backgroundImage from "/assets/home1-img1.jpg"; // Adjust path as needed
 import { Link } from "react-router-dom";
 
 function Login() {
