@@ -3,13 +3,13 @@
   text-align: center;
   padding: 2rem;
   background-color: white;
-  height: 55vh;
+  height: 75vh;
 }
 
 .payyed-container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .payyed-container p {
@@ -18,11 +18,13 @@
 }
 
 .features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin-bottom: 2rem;
-  margin-top: 140px;
-  margin-left: 60px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: -30px;
+  margin-left: 130px;
 }
 .feature:hover {
   transform: scale(1.05);
@@ -47,7 +49,7 @@
   justify-content: center;
   height: 5vh;
   border-bottom: 8px;
-  margin-top: 47px;
+  margin-top: 58px;
   background-color: rgba(128, 128, 128, 0.111);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -66,38 +68,6 @@
   color: #0f9b3c;
 }
 
-/* src/components/Home4.css */
-.payyed-container {
-  text-align: center;
-  padding: 2rem;
-  background-color: white;
-  height: auto;
-}
-
-/* Title and Paragraph */
-.payyed-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.payyed-container p {
-  font-size: 18px;
-  color: #0e0d0d;
-  margin-bottom: 2rem;
-}
-
-/* Grid Layout */
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 2x2 layout */
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin-top: -80px;
-  margin-left: 130px;
-}
-
 /* Feature Box */
 .feature {
   display: flex;
@@ -111,21 +81,6 @@
   transition: transform 0.3s ease-in-out;
   padding: 20px;
   margin-top: 100px;
-}
-
-.feature:hover {
-  transform: scale(1.05);
-}
-
-/* Icons */
-.feature svg {
-  font-size: 40px;
-  color: #197c38;
-}
-
-/* Icon Wrapper */
-.home4-svg {
-  margin-bottom: 10px;
 }
 
 /* Card Title */
@@ -144,82 +99,51 @@
   color: #0f9b3c;
 }
 
-/* Small Screens (Phones) */
+/* ✅ Mobile (1 column) */
+
 @media (max-width: 768px) {
   .features-grid {
-    grid-template-columns: repeat(2, 2fr); /* 1 column for small screens */
-    gap: 10px;
-  }
-
-  .feature {
-    width: 200px;
-    height: 150px;
-  }
-
-  .feature svg {
-    font-size: 30px;
-  }
-
-  #card-payyedd {
-    display: flex;
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    width: 200px; /* Adjusted width */
-    height: 50px; /* Unified height */
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 4fr); /* 2 columns */
+    grid-template-rows: auto;
     justify-content: center;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin-top: 27px;
-    background-color: rgba(128, 128, 128, 0.111);
-  }
-
-  .see-more {
-    display: flex;
-    margin-bottom: 110px;
     align-items: center;
-    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
   }
-}
 
-/* Extra Small Screens (Very Small Phones) */
-@media (max-width: 480px) {
   .payyed-container {
-    padding: 30px 10px;
-  }
-
-  .features-grid {
-    grid-template-columns: repeat(2, 2fr);
+    height: auto;
   }
 
   .feature {
-    max-width: 180px;
-    height: 140px;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
   }
 
-  .feature svg {
-    font-size: 28px;
+  .payyed-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .payyed-container p {
+    font-size: 14px;
+    margin-bottom: 50px;
+    color: grey;
   }
 
   #card-payyedd {
-    display: flex;
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    width: 180px; /* Adjusted width */
-    height: 50px; /* Unified height */
-    align-items: center;
-    justify-content: center;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin-top: 20px;
-    background-color: rgba(128, 128, 128, 0.111);
+    all: unset; /* Resets all styles */
+    display: block; /* Change to default block behavior */
+    font-size: inherit;
+    background-color: transparent;
+    margin-top: 0;
+    height: auto;
+
+
   }
 
   .see-more {
-    font-size: 12px;
+    margin-top: 20px;
   }
 }

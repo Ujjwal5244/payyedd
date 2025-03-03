@@ -151,11 +151,14 @@ General Styles .hero-container {
 }
 
 .get-started-btn {
+  display: flex;
   width: 230px;
-  height: 6.5vh;
+  height: 8vh;
   background-color: #6fe971;
   color: white;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
 }
 
 .get-started-btn:hover {
@@ -248,4 +251,77 @@ button.owl-prev {
   background-color: transparent;
   border-radius: 50%;
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 320px) {
+  .hero-container {
+    height: 90vh; /* Reduce height for smaller screens */
+    overflow: hidden;
+    margin-top: -20px;
+  }
+
+  .hero-slide {
+    height: 85vh; /* Adjust slide height */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-text {
+    width: 90%; /* Make text container fit smaller screens */
+    height: auto;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -140px; */
+  }
+
+  .hero-text h1 {
+    font-size: 1.2rem; /* Reduce title size */
+  }
+
+  .hero-text p {
+    font-size: 13px; /* Decrease paragraph size */
+    line-height: 1.4;
+    margin-bottom: 15px;
+    margin-top: 40px;
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+    justify-content: end;
+    margin-top: 50px;
+  }
+
+  .get-started-btn,
+  .watch-demo-btn {
+    width: 100%; /* Make buttons full width */
+    height: auto;
+    font-size: 0.9rem;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .play-icon {
+    font-size: 1rem; /* Adjust play icon size */
+  }
+
+  /* Adjust carousel navigation buttons */
+  .owl-next, 
+button.owl-prev {
+    display: none !important;
+}
+  /* Dots Navigation */
+  .owl-theme .owl-dots {
+    margin-bottom: -60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .owl-theme .owl-dots .owl-dot {
+    width: 8px;
+    height: 8px;
+    
+  }
 }

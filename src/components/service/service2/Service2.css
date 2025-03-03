@@ -56,3 +56,70 @@
 }
 
 /* Responsive Design */
+
+/* Medium Screens - Tablets (750px) */
+@media (max-width: 750px) {
+  .container-service2 {
+    padding: 1.5rem;
+  }
+
+  .service2-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .cards-container-service2 {
+    grid-template-columns: 1fr; /* Stack cards in a single column */
+    gap: 1.5rem;
+  }
+
+  .card-service2 {
+    padding: 1.5rem;
+  }
+
+  .card-image-service2 {
+    width: 180px; /* Reduce image size slightly */
+  }
+
+  .service2-card-title {
+    font-size: 1.3rem;
+  }
+
+  .service2-card-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens - Mobile (320px) */
+@media (max-width: 320px) {
+  .container-service2 {
+    padding: 1rem;
+  }
+
+  .service2-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards-container-service2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card-service2 {
+    padding: 1rem;
+  }
+
+  .card-image-service2 {
+    width: 150px; /* Further reduce image size */
+    margin-bottom: 1rem;
+  }
+
+  .service2-card-title {
+    font-size: 1.2rem;
+  }
+
+  .service2-card-description {
+    font-size: 0.9rem;
+  }
+}

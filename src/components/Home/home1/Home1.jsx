@@ -55,7 +55,8 @@ const Home1 = () => {
               <div className="hero-buttons">
                 <button className="get-started-btn">{slide.button1}</button>
                 <button className="watch-demo-btn">
-                  <div className="play-icon">▶</div> <div className={`${index === 0 ? "sld-btn1":"sld-btn2"}`}>{slide.button2}</div>
+                  <div className="play-icon">▶</div> 
+                  <div className={`${index === 0 ? "sld-btn1":"sld-btn2"}`}>{slide.button2}</div>
                 </button>
               </div>
             </div>

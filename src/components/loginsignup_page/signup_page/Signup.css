@@ -10,7 +10,7 @@
 .signup-main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
+  height: 100vh;
   margin-top: -20px;
 }
 
@@ -125,16 +125,56 @@
   font-weight: 500;
 }
 
+/* 🔥 Responsive Design 🔥 */
 @media (max-width: 768px) {
-  .container {
+  .signup-main-container {
     grid-template-columns: 1fr;
+    /* width: 100%; */
   }
 
-  .left-panel {
-    display: none;
+  .left-signup-container {
+    height: 50vh;
+    width: auto;
+    /* padding: 1.5rem; */
+    text-align: center;
   }
 
-  .right-panel {
-    padding: 2rem 1rem;
+  .welcome-signup-content h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-signup-content p {
+    font-size: 1rem;
+  }
+
+  .right-main-container {
+    padding: 1rem;
+    width: auto;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+  #signup-btn {
+    display: flex;
+    width: 280px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+/* @media (max-width: 480px) {
+  .welcome-signup-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+
+  .form-container h2 {
+    font-size: 1.8rem;
+  }
+} */

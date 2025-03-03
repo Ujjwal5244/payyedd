@@ -193,36 +193,125 @@
   }
 }
 
-/* Small Mobile Screens (max-width: 480px) */
-@media (max-width: 480px) {
-  .footer1 {
+/* Mobile (max-width: 320px) */
+@media (max-width: 320px) {
+  .footers {
     padding: 15px;
+  }
+
+  .footer1 {
+    flex-direction: column;
     text-align: center;
+    width: 100%;
   }
 
   .footer-links {
     flex-direction: column;
     gap: 8px;
+    text-align: center;
   }
 
   .footer-links a {
-    font-size: 14px;
+    font-size: 10px;
+  }
+
+  .footer1-logo-links {
+    justify-content: center;
+    gap: 10px;
   }
 
   .social-icon {
-    font-size: 18px;
+    font-size: 18px; /* Reduce icon size */
+  }
+
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-info p {
-    font-size: 12px;
+    display: flex;
+    font-size: 10px;
+    margin-right: 55px;
   }
 
   .footer-legal {
-    flex-direction: column;
     gap: 5px;
+    text-align: center;
   }
 
   .footer-legal a {
     font-size: 12px;
   }
+
+  #footer-copyright {
+    font-size: 12px;
+    margin: 0 5px; /* Adds space on both left and right */
+    margin-top: -2px;
+  }
 }
+
+/* Mobile (max-width: 320px) */
+@media (max-width: 375px) {
+  .footers {
+    padding: 15px;
+  }
+
+  .footer1 {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .footer-links a {
+    font-size: 10px;
+  }
+
+  .footer1-logo-links {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icon {
+    font-size: 18px; /* Reduce icon size */
+  }
+
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-info p {
+    display: flex;
+    font-size: 10px;
+    margin-right: 55px;
+  }
+
+  .footer-legal {
+    gap: 5px;
+    text-align: center;
+  }
+
+  .footer-legal a {
+    font-size: 12px;
+  }
+
+  #footer-copyright {
+    font-size: 12px;
+    margin: 0 5px; /* Adds space on both left and right */
+    margin-top: -2px;
+  }
+}
+

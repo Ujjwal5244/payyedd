@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactRouter from './components/routes/Routes';
 import * as $ from "jquery"
+import ReactRouter from './routes/Routes';
 
 
 
 const App = () => {
   return (
     <>
-    <ReactRouter />
+    <ReactRouter/>
     </>
   );
 };

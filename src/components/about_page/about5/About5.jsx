@@ -34,7 +34,7 @@ const About5 = () => {
   ];
 
   return (
-    <div className="investors-container">
+    <section className="investors-container">
       <h1>Our Investors</h1>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       <div className="investors-grid">
@@ -50,7 +50,7 @@ const About5 = () => {
           </a>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-info">
-        <p>Copyright © 2022 <span id='footer-copyright'>Payyed.</span> All Rights Reserved.</p>
+        <p>Copyright © 2022 <span id='footer-copyright'> Payyed </span> All Rights Reserved.</p>
         <div className="footer-legal">
           <a href="/security">Security</a>
           <a href="/terms">Terms</a>

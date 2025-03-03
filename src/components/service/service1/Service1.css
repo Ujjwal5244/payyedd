@@ -1,64 +1,65 @@
-.moving-cards-container {
-  width: 100%;
-  height: 75vh;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  background-color: rgba(16,24,38,255);
-  margin-top: -20px;
-}
-
-.service1-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 16vh;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.service1-container h1{
-    font-size: 35px;
-    color: rgb(35, 35, 174);
-    margin-top: 60px;
-}
-
-.service1-container h3{
-    font-size: 35px;
-    color: white;
-}
-
-.moving-cards-service1 {
+.service1-container {
   display: flex;
-  gap: 20px;
-  width: max-content;
-  margin-top: 65px;
-}
-
-.card-service1 {
-  min-width: 250px;
-  height: 300px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.card-service1 img {
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-overlay-service1 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  height: 85vh;
+  margin-top: -20px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(16, 24, 38, 255);
   text-align: center;
-  padding: 10px;
 }
+
+.service1-header {
+  margin-top: 50px;
+}
+
+.service1-header h1 {
+  font-size: 36px;
+  font-weight: 400;
+  color: rgb(8, 99, 218);
+}
+
+.service1-header p {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  margin-top: 15px;
+}
+.infinitecard-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .service1-container {
+    height: auto;
+  }
+  .service1-header h1 {
+    font-size: 28px;
+    /* margin-top: 300px; */
+  }
+  .service1-header p {
+    font-size: 24px;
+  }
+  
+}
+
+/* @media (max-width: 480px) {
+  .service1-header h1 {
+    font-size: 24px;
+  }
+  .service1-header p {
+    font-size: 20px;
+  }
+  .infinitecard-box {
+    margin-top: -20px;
+  }
+} */

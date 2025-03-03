@@ -1,6 +1,5 @@
-"use client";
-
 import { cn } from "@/lib/utils";
+import "./infinite-moving-cards.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -9,7 +8,7 @@ export const InfiniteMovingCards = ({
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
-  className
+  className,
 }) => {
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
@@ -37,9 +36,15 @@ export const InfiniteMovingCards = ({
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
-        containerRef.current.style.setProperty("--animation-direction", "forwards");
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          "forwards"
+        );
       } else {
-        containerRef.current.style.setProperty("--animation-direction", "reverse");
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          "reverse"
+        );
       }
     }
   };
@@ -55,36 +60,45 @@ export const InfiniteMovingCards = ({
     }
   };
   return (
-    (<div
+    <div
       ref={containerRef}
       className={cn(
         `scroller relative z-20  max-w-7xl overflow-hidden  
          //[mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]
         `,
         className
-      )}>
+      )}
+    >
       <ul
         ref={scrollerRef}
         className={cn(
           " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
-        )}>
+        )}
+      >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
-            style={{
-              // background:
-              //   "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            }}
-            key={item.name}>
-              <Link to={item.path}>
-              
-            <img src={item.image} alt="img" />
-              </Link>
+            className="w-[330px] md:w-[320px] sm:w-[250px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 bg-white  h-[250px] md:h-[250px] sm:h-[250px]"
+            style={
+              {
+                // background:
+                //   "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+              }
+            }
+            key={item.name}
+          >
+            <Link to={item.path}>
+              <div className="infinite-card-img-container">
+                <img className="infinite-card-img" src={item.image} alt="img" />
+              </div>
+              <div className="infinite-card-heading">
+                <span className="gradient-textcard">{item.name}</span>{" "}
+              </div>
+            </Link>
           </li>
         ))}
       </ul>
-    </div>)
+    </div>
   );
 };

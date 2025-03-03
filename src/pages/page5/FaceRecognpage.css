@@ -1,0 +1,193 @@
+/* FaceRecognpage.css */
+.FaceRecog-container {
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 50px;
+    margin-left: 130px;
+  }
+  
+  .FaceRecog-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .FaceRecog-leftsection {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+  }
+  
+.FaceRecog-leftsection img{
+    width: 450px;
+    height: 270px;
+}
+  
+  .FaceRecog-rightsection {
+    flex: 1;
+    margin-left: -110px;
+    align-items: flex-start;
+    justify-content: left;
+  }
+  
+  .FaceRecog-maintitle {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .FaceRecog-modelnumber {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .FaceRecog-sharesection {
+    margin-bottom: 20px;
+  }
+  
+  .FaceRecog-sharetext {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .FaceRecog-social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+  }
+  
+  .social-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .FaceRecog-availablesection {
+    margin-bottom: 20px;
+  }
+  
+  .available-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .platform-buttons img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  .FaceRecog-actionbuttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .quote-btn {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .enquiry-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .enquiry-btn:hover {
+    background-color: rgba(210, 205, 205, 0.861);
+  }
+  
+  .quote-btn:hover {
+    background-color: rgb(28, 27, 27);
+  }
+  
+  .FaceRecog-serviceinfo {
+    margin-top: 40px;
+  }
+  
+  .FaceRecog-section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .FaceRecog-infotext {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media screen and (max-width: 1024px) {
+    .FaceRecog-container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .FaceRecog-leftsection {
+      width: 100%;
+      margin-left: 0;
+    }
+    .FaceRecog-rightsection {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .FaceRecog-container {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .FaceRecog-head {
+      flex-direction: column;
+      align-items: left;
+    }
+    .FaceRecog-leftsection, .FaceRecog-rightsection {
+      width: 100%;
+      text-align: left;
+    }
+    .FaceRecog-actionbuttons {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .FaceRecog-maintitle {
+      font-size: 24px;
+    }
+    .FaceRecog-modelnumber {
+      font-size: 14px;
+    }
+    .FaceRecog-social-icons {
+      justify-content: left;
+    }
+    .FaceRecog-actionbuttons {
+      flex-direction: column;
+    }
+  }
